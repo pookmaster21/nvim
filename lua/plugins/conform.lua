@@ -33,5 +33,13 @@ return {
 				timeout_ms = 1000,
 			},
 		})
+
+		conform.formatters.prettier = {
+			prepend_args = { "--tab-width", "4" },
+		}
+
+		conform.formatters.clang_format = {
+			prepend_args = { "--style", "{IndentWidth: 4}" },
+		}
 	end,
 }
